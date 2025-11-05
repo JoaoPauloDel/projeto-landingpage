@@ -376,3 +376,132 @@ header {
     }
 
 }
+
+.local {
+    width: calc(100% - 440px);
+    margin: 0 auto;
+    display: flex;
+    background-image: linear-gradient(45deg, #f3c7c4, #930f06);
+    border-radius: 48px;
+    color: #ffffff;
+    position: relative;
+
+    &>img {
+        position: absolute;
+        left: 48%;
+        bottom: -20px;
+        transform: translate(-50%);
+    }
+
+    &>div:nth-child(1) {
+        flex: 1;
+        padding: 50px 0 50px 40px;
+
+        & h2 {
+            font-size: 80px;
+            line-height: 80px;
+
+            & div {
+                width: 50px;
+                height: 1px;
+                background-color: #ffffff;
+                margin-top: 12px;
+            }
+
+        }
+
+        & h5 {
+            font-size: 20px;
+            margin-top: 16px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        & a {
+            font-size: 16px;
+            color: var(--color-headings);
+            font-weight: 600;
+            text-decoration: none;
+            display: block;
+            margin-top: 20px;
+        }
+    }
+
+    &>div:nth-child(2) {
+        width: 380px;
+        background-image: linear-gradient(45deg, #ffffff, #930f06);
+        border-radius: 0 48px 48px 0;
+        padding: 30px 40px;
+
+        & h3 {
+            font-size: 40px;
+
+            & div {
+                width: 100%;
+                height: 1px;
+                background-color: #ffffff;
+                margin-top: 20px;
+            }
+        }
+
+        & p {
+            margin: 26px 0;
+        }
+
+        & div {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+}
+
+footer {
+    width: calc(100% - 440px);
+    border-top: 1px solid #3C0E0E60;
+    margin: 0 auto;
+    margin-top: 85px;
+    padding: 70px 0 ;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-headings);
+
+    & h6 {
+        font-size: 20px;
+        color: var(--color-text2);
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    & p {
+        width: 290px;
+        margin-bottom: 20px;
+    }
+
+}
+
+    .links{
+        display: flex;
+        flex-direction: column;
+
+
+        & a{
+            text-decoration: none;
+            color: var(--color-headings);
+            transition-duration: 200ms;
+
+            &:hover{
+                color: var(--color-text2);
+                padding-left:10px ;
+            }
+        }
+    }
+
+
+
+
+
+
+.delivery a {
+    transition: transform 0.2s ease-in-out;
+}
