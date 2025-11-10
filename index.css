@@ -497,11 +497,18 @@ footer {
         }
     }
 
-
-
-
-
-
 .delivery a {
     transition: transform 0.2s ease-in-out;
+}
+
+
+.dono{
+    font-size: 12px;
+    text-decoration: none;
+    color: #ff0000;
+    transition-duration:200ms;
+    
+    &:hover{
+        color: #ff000090;
+    }
 }
